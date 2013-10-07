@@ -1,0 +1,66 @@
+@import "bourbon/bourbon";
+
+$visual-grid: true;
+@import "neat/neat";
+
+body {
+  font: {
+    family: 'Arial';
+    size: 20px;
+  }
+};
+
+#container {
+  @include outer-container();
+  background: #EEE;
+};
+
+
+#a {
+ @include row();
+};
+
+#b {
+  @include span-columns(4 of 12);
+  background: #DDD;
+};
+
+#c {
+  @include span-columns(8 of 12);
+  background: #DDD;
+};
+
+#d {
+  @include span-columns(2 of 8);
+  background: #CCC;
+};
+
+#e {
+  @include span-columns(6 of 8);
+  background: #CCC;
+};
+
+#f {
+  @include span-columns(8);
+  @include shift(3);
+  @include omega();
+  background: #DDD;
+};
+
+#g {
+  @include span-columns(6 of 12);
+  background: #DDD;
+};
+
+#h {
+  @include span-columns(6 of 12);
+  @include omega();
+  background: #DDD;
+};
+
+#i {
+  @include span-columns(9);
+  @include shift(3);
+  background: #DDD;
+};
+

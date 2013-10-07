@@ -1,0 +1,25 @@
+!!! 5
+%html
+
+  %head
+    %title Bourbon and Neat example
+    %link{href: 'style.css', media: 'screen', rel: 'stylesheet', type: 'text/css'}
+
+  %body
+    #container
+      #a
+        #b
+          span-columns(4 of 12)
+        #c
+          #d
+            span-columns(2 of 8)
+          #e
+            span-columns(6 of 8)
+      #f
+        span-columns(9) + shift(3)
+      #g
+        span-columns(6 of 12)
+      #h
+        span-columns(6 of 12)
+      #i
+        span-columns(9) + shift(3)
